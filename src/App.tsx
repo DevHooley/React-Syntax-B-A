@@ -1,18 +1,5 @@
 import React from "react";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Sidebar from "./components/Sidebar";
-import HelloWorld from "./components/HelloWorld";
-import ModeToggler from "./components/ModeToggler";
-import Promo from "./components/Promo";
-import Parent from "./components/Parent";
-import Stateless from "./components/Stateless";
-import LittleLemon from "./components/LittleLemon";
 import AppHomePage from "./components/Homepage/AppHomePage";
-import CalendarApp from "./components/CalendarApp/CalendarApp";
-import Cats from "./components/Cats/Cats";
-import ParkApp from "./components/embedded-assets/ParkApp";
-import PlayerApp from "./components/React-Player/PlayerApp";
 
 const Card = "grid grid-cols-2 p-4 shadow-lg shadow-gray-300 rounded-md";
 
@@ -20,24 +7,6 @@ function App() {
   return (
     <>
       <AppHomePage />
-      <Promo />
-      <PlayerApp />
-      <ParkApp />
-      <Cats />
-      <Parent />
-      {/* <HealthyEating /> */}
-      <CalendarApp />
-      <ModeToggler />
-      <HelloWorld />
-      <LittleLemon />
-      <div className="h-auto w-auto p-10">
-        <Header name="Anna" color="purple" />
-        <div className={Card}>
-          <Main greet="Howdy" />
-          <Sidebar greet="Hi" />
-        </div>
-      </div>
-      <Stateless />
     </>
   );
 }
