@@ -8,10 +8,11 @@ import Promo from "./components/Promo";
 import Parent from "./components/Parent";
 import Stateless from "./components/Stateless";
 import LittleLemon from "./components/LittleLemon";
-import RideApp from "./components/RideApp/RideApp";
-import HealthyEating from "./components/HealthyEating";
 import AppHomePage from "./components/Homepage/AppHomePage";
 import CalendarApp from "./components/CalendarApp/CalendarApp";
+import Cats from "./components/Cats/Cats";
+import ParkApp from "./components/embedded-assets/ParkApp";
+import PlayerApp from "./components/React-Player/PlayerApp";
 
 const Card = "grid grid-cols-2 p-4 shadow-lg shadow-gray-300 rounded-md";
 
@@ -20,11 +21,13 @@ function App() {
     <>
       <AppHomePage />
       <Promo />
+      <PlayerApp />
+      <ParkApp />
+      <Cats />
       <Parent />
       {/* <HealthyEating /> */}
       <CalendarApp />
       <ModeToggler />
-      <RideApp />
       <HelloWorld />
       <LittleLemon />
       <div className="h-auto w-auto p-10">

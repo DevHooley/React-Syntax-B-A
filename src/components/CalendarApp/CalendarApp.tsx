@@ -1,5 +1,7 @@
 import React from "react";
 
+const App = "text-center bg-slate-300 mx-auto w-64 capitalize rounded-lg p-1 border border-slate-500 outline outline-slate-400 mt-2";
+
 function CalendarApp() {
   const time = new Date();
   const day = time.toLocaleString("en-us", { weekday: "long" });
@@ -20,11 +22,11 @@ function CalendarApp() {
     dayMessage = "stay calm and keep having fun";
   }
   return (
-    <div className="App">
+    <div className={App}>
       <h1>{dayMessage}</h1>
       {morning ? <h2>Have you had breakfast yet?</h2> : ""}
     </div>
   );
 }
 
-export default CalendarApp
+export default CalendarApp;
